@@ -1,0 +1,37 @@
+This example program is part of the presentation, Dynamic Code Generation
+with LLVM, given by Jeff Cohen on Dec 12, 2018, at the Bay Area ACCU meetup.
+
+It has been released into the public domain.  Do with it as you like.
+
+The home page of the LLVM project can be found at:
+
+    http://llvm.org
+
+There are dozens of documents covering numerous topics, but the following
+three are a good place to begin:
+
+    https://llvm.org/docs/GettingStarted.html
+    https://llvm.org/docs/LangRef.html
+    https://llvm.org/docs/tutorial/index.html
+
+The last one is the home page for the Kaliedoscope tutorial.  One of its
+sections covers the JIT (though at the time of this writing, it claims to
+be out of date and will remain so until API churning comes to a conclusion).
+
+2016 LLVM dev meeting presentation on the ORC engine:
+
+    Video:  https://www.youtube.com/watch?v=hILdR8XRvdQ
+    Slides: https://llvm.org/devmtg/2016-11/Slides/Hames-ORC.pdf
+
+While the above is still relevant for LLVM 7.0, a new API is under development
+for a future release.  It will not be backwards compatible.  The following
+video from the 2018 dev meeting covers ORCv2:
+
+    https://www.youtube.com/watch?v=MOQG5vkh9J8
+
+And finally, the calc example program is located here:
+
+    https://github.com/jeffc768/llvm-jit-example.git 
+
+To build, the environment variable USE_LLVM must point to the llvm-config
+program.  Run Debug/calc.  It has two options, --printIR and --opt.
